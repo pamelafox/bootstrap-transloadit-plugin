@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bootstrap Transloadit Example</title>
+    <link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+    <!-- This is the plugin specific CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.transloadit.css"/>
+  </head>
+  <body>
+
+  <div class="container">
+  <div class="row span10">
+  <h1>Bootstrap Transloadit Examples</h1>
+
+
+  <form class="form-horizontal">
+
+    <h3>An image upload with preview</h3>
+    <div class="control-group">
+      <label class="control-label">Photo</label>
+      <div class="controls">
+        <div class="uploader-controls" id="uploader1">
+          <div class="uploader-preview">
+            <img>
+          </div>
+          <div class="uploader-side">
+            <button class="btn uploader-button" type="button">Upload file</button>
+            <div class="uploader-file-input">
+              <input type="file" accept="image/*" name="uploader1-input">
+            </div>
+            <div class="progress progress-striped active uploader-progress" style="display:none;">
+              <div class="bar" style="width:0%"></div>
+            </div>
+            <p class="uploader-help">Maximum size of 1MB. PNG, JPEG, GIF.</p>
+          </div>
+          <div class="uploader-input">
+            <input class="uploader-input-url" type="hidden">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="clear:both"></div>
+
+    <h3>An image upload with options specified via data attributes</h3>
+    <div class="control-group">
+      <label class="control-label">Photo</label>
+      <div class="controls">
+        <div class="uploader-controls" id="uploader2" data-transloadit-key="462bdcc750904ded81b7d43c7d9715fa" data-transloadit-template="9534bd73c7b645d79f5306b63d876446">
+          <div class="uploader-preview">
+            <img>
+          </div>
+          <div class="uploader-side">
+            <button class="btn uploader-button" type="button">Upload file</button>
+            <div class="uploader-file-input">
+              <input type="file" accept="image/*" name="uploader2-input">
+            </div>
+            <div class="progress progress-striped active uploader-progress" style="display:none;">
+              <div class="bar" style="width:0%"></div>
+            </div>
+            <p class="uploader-help">Maximum size of 1MB. PNG, JPEG, GIF.</p>
+          </div>
+          <div class="uploader-input">
+            <input class="uploader-input-url" type="hidden">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="clear:both"></div>
+
+    <h3>A file upload</h3>
+    <div class="control-group">
+      <label class="control-label">File</label>
+      <div class="controls">
+        <div class="uploader-controls" id="uploader3">
+          <div class="uploader-preview">
+            <a href="#" style="padding-top:6px; display:inline-block;"></a>
+          </div>
+          <div class="uploader-side">
+            <button class="btn uploader-button" type="button">Upload file</button>
+            <div class="uploader-file-input">
+              <input type="file" accept="application/odt,application/docx,application/rtf,text/rtf,text/txt,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/doc,application/odf,application/pdf,application/zip,text/plain,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" name="uploader3-input">
+            </div>
+            <div class="progress progress-striped active uploader-progress" style="display:none;">
+              <div class="bar" style="width:0%"></div>
+            </div>
+            <p class="uploader-help">Maximum size of 1MB. PDF, DOC, TXT.</p>
+          </div>
+          <div class="uploader-input">
+            <input class="uploader-input-url" type="hidden">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+  </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <!-- These three are un-modified -->
+  <script src="jquery.easing.js"></script>
+  <script src="jquery.jsonp.js"></script>
+  <script src="json2.js"></script>
+  <!-- This is a modified version of Transloadit's official script -->
+  <script src="jquery.transloadit2.js"></script>
+  <!-- This is the bootstrap specific JS -->
+  <script src="bootstrap.transloadit.js"></script>
+  <script>
+$('#uploader1').transloaditUploader({key: '462bdcc750904ded81b7d43c7d9715fa', template: '9534bd73c7b645d79f5306b63d876446'});
+
+$('#uploader2').transloaditUploader();
+
+$('#uploader3').transloaditUploader({key: '462bdcc750904ded81b7d43c7d9715fa', template: '9534bd73c7b645d79f5306b63d876446'});
+
+  </script>
+  </body>
+</html>

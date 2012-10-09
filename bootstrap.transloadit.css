@@ -1,0 +1,62 @@
+.uploader-controls .uploader-preview {
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.uploader-controls .uploader-preview img {
+  max-width: 120px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+
+.uploader-controls .uploader-error {
+  color: #bb3636;
+  font-size: 12px;
+}
+.uploader-controls .uploader-side {
+  display: inline-block;
+  max-width: 230px;
+  position: relative;
+  margin-bottom: 5px;
+}
+.uploader-controls .uploader-side .uploader-progress {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  margin-left: 7px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.uploader-controls .uploader-side .uploader-help {
+  margin-top: 5px;
+  color: #999;
+  font-size: 12px;
+}
+.uploader-controls .uploader-side .uploader-file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.uploader-controls .uploader-side .uploader-file-input input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.uploader-controls .uploader-input {
+  padding-top: 10px;
+  clear: left;
+}
